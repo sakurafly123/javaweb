@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.sakurafly.dao.IUserDao">
+
+    <select id="selectUserbyName" resultType="User" >
+        SELECT * FROM user WHERE username = #{username}
+    </select>
+    <!--按照名字查找-->
+    <select id="selectUser" resultType="User" >
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+    <!--多参数使用索引来查找-->
+    <select id="selectUser1" resultType="User" >
+        SELECT * FROM user WHERE username = #{username} and password = #{password}
+    </select>
+    <select id="selectAll" resultType="User" >
+        SELECT * FROM user WHERE isdelet= 0
+    </select>
+    <update id="update"  parameterType="com.sakurafly.pojo.User" >
+        UPDATE USER
+        <trim prefix="set" suffixOverrides=",">
+            <if test="username!=null">username=#{username},</if>
+            <if test="age!=null">age=#{age},</if>
+            <if test="password!=null">password=#{password},</if>
+            <if test="isdelet!=null">isdelet=#{isdelet},</if>
+        </trim>
+        WHERE id=#{id}
+    </update>
+    <insert id="insert" parameterType="com.sakurafly.pojo.User" >
+    insert into user ( username, age,
+      password)
+    values ( #{username,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER},
+      #{password,jdbcType=VARCHAR})
+  </insert>
+
+
+</mapper>
