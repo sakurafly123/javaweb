@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="第 1 页" id="8N7P6PDUQI_jMRLCBt73">
-    <mxGraphModel dx="3945" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3342" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -173,8 +173,18 @@
         <mxCell id="RJ4_m8K7gbVCZAbbl5DW-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RJ4_m8K7gbVCZAbbl5DW-10" target="RJ4_m8K7gbVCZAbbl5DW-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="RJ4_m8K7gbVCZAbbl5DW-27" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RJ4_m8K7gbVCZAbbl5DW-8">
+          <mxGeometry x="-0.1048" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="RJ4_m8K7gbVCZAbbl5DW-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RJ4_m8K7gbVCZAbbl5DW-10" target="RJ4_m8K7gbVCZAbbl5DW-2">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RJ4_m8K7gbVCZAbbl5DW-25" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RJ4_m8K7gbVCZAbbl5DW-9">
+          <mxGeometry x="-0.7569" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="RJ4_m8K7gbVCZAbbl5DW-10" value="资源池选择个数是否等于所有资源池个数" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-1220" y="850" width="120" height="80" as="geometry" />
@@ -183,13 +193,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RJ4_m8K7gbVCZAbbl5DW-12" value="校验过半master是否在同一个nbs集群" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-1230" y="965" width="120" height="60" as="geometry" />
+          <mxGeometry x="-1220" y="965" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RJ4_m8K7gbVCZAbbl5DW-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RJ4_m8K7gbVCZAbbl5DW-14" target="RJ4_m8K7gbVCZAbbl5DW-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RJ4_m8K7gbVCZAbbl5DW-14" value="校验过半节点是否在同一个nbs资源" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-1230" y="1055" width="120" height="60" as="geometry" />
+          <mxGeometry x="-1220" y="1055" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RJ4_m8K7gbVCZAbbl5DW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="RJ4_m8K7gbVCZAbbl5DW-10" source="RJ4_m8K7gbVCZAbbl5DW-19">
           <mxGeometry relative="1" as="geometry">
